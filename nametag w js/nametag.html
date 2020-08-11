@@ -3,14 +3,19 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
+        <script src=nametag.js></script>
     </head>
     <body>
+
         <div class="red-rect">
             <p class="hello">Hello</p>
             <p class="phrase">my  name  is</p>
             <div class="white-rect">
-                <p class="name">Cooper</p>
+                <p class="my-name" id="name-place">Cooper</p>
             </div>
         </div>
+
+        <label for="name-change">Not your Name?</label>
+            <button onclick="submitChange()" id="name-change">Submit Change</button>
     </body>
 </html>
