@@ -1,4 +1,4 @@
-for (var fb=1; fb <=100; fb++) {
+for (let fb=1; fb <=100; fb++) {
     if (Number.isInteger(fb/3)) {
         if (Number.isInteger(fb/5)) {
             console.log(`Fizzbuzz`)
