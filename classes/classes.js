@@ -12,6 +12,14 @@ class Animal {
     sayName () {
         console.log(this.name)
     }
+
+    set rename(name2) {
+        this.name = name2
+    }
+
+    get rename() {
+        return this.name
+    }
 }
 
 class Dog extends Animal {
@@ -25,16 +33,6 @@ let fido = new Dog("Fido", "Woof")
 console.log(fido)
 fido.speak()
 
-var newName = 'Spot'
+fido.rename = `Spot`
 
-this.name = {
-
-    get rename() {
-        return this.name
-    },
-
-    set rename(newName) {
-        this.name = newName
-    }
-}
 fido.sayName()
