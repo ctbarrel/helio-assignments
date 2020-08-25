@@ -1,0 +1,13 @@
+A promise is an object that, when read, returns a 
+Boolean value and can be used to return a different
+value through .then and .catch, .then with true, and
+.catch with false.
+
+Promises are used by setting it up, then consuming it.
+The set up looks like a function beginning with "new
+Promise", then is "consumed" using other functions
+based on .then and .catch.
+
+The main benefit of using a promise to avoid nesting
+callback functions, aka Callback Hell. It allows for
+a far more vertical code. 
