@@ -1,0 +1,24 @@
+1. What is a Database?
+  A database is a computer that stores data to be called by the code.
+1b. Wy is a database necessary?
+  It makes the code faster if it doesn't have to store the info itself, and it makes it easier to move around
+  as it disseminates through the internet.
+2. What can be stored in a Database?
+  Documents, objects that store other objects, and by extension, any data type. Databases store data.
+3. What types of Databases are there?
+  Relational and non-relational are the two big ones
+4. Why would I use one over the other?
+  Relational databases are good for relating data by joining tables.
+  Non-relational databases are faster and handle more kinds of data better.
+5. What is a Query?
+  A question asked on a set of data. It is usually used to find a particular object, row, column, or whatever. 
+6. What is Encryption?
+  Encryption is the alteration of code based on an algorithm that is difficult to decode. It is used to 
+6b. Why is it important at database level?
+  Databases often hold sensitive information, such as passwords, that people enter in multiple locations, so
+  a data breach could endanger several people
+7. What is Object Permanence?
+  Nothing specific to do with coding (if I remember the lecture correctly). It refers to the cognitive understanding that an object exists even when you
+  cannot see it.
+8. Where can your database live?
+  They live on servers, which Amazon has several, Google has tons, etc. It is accessed in the back-end of the code.
