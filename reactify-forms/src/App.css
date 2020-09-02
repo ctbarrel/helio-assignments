@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  background-color: seagreen;
+  font-family: Serif
+}
+
+input {
+  background-color: powderblue;
+  border-color: turquoise;
+  font-family: monospace
+}
