@@ -1,0 +1,41 @@
+import React from 'react'
+import {Link} from 'react-router-dom'
+import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
+import {LoggedInConsumer, LoggedInContext} from './LoggedInContext'
+
+export default function Home (props) {
+    
+    let {users, loggedIn} = React.useContext(LoggedInContext)
+    
+    const isLogged = () => {
+
+        if (loggedIn) {
+            return (<h3>Logged In</h3>)
+        } else {
+            return (<h3>Not Logged In</h3>)
+        }
+    }
+
+    return (
+
+        <div>
+            <LoggedInConsumer>
+            {isLogged()}
+            </LoggedInConsumer>
+            
+            <h1>Welcome to the Home Page</h1>
+            <Link to="/login"><Button variant='outline-danger'>Login</Button></Link>
+            <br></br>
+            <Link to="/signup"><Button variant='outline-warning'>Sign Up</Button></Link>
+            <br></br>
+            <Link to="/forgot"><Button variant='outline-success'>Forgot Password?</Button></Link>
+            <br></br>
+            {
+                users.map(user => {
+                    return <Card body key={user.username}>{user.username}</Card>
+                })
+            }
+        </div>
+    )
+}
